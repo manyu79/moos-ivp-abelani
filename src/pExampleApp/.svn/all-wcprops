@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/moos-ivp-extend/!svn/ver/58/trunk/src/pExampleApp
+END
+ExampleApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/moos-ivp-extend/!svn/ver/58/trunk/src/pExampleApp/ExampleApp.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/moos-ivp-extend/!svn/ver/58/trunk/src/pExampleApp/main.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/moos-ivp-extend/!svn/ver/58/trunk/src/pExampleApp/CMakeLists.txt
+END

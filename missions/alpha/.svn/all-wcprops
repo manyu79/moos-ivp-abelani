@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/moos-ivp-aro/!svn/ver/5473/branches-public/moos-ivp-2680/ivp/missions/s1_alpha
+END
+clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/moos-ivp-aro/!svn/ver/5473/branches-public/moos-ivp-2680/ivp/missions/s1_alpha/clean.sh
+END
+alpha.moos
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/moos-ivp-aro/!svn/ver/5473/branches-public/moos-ivp-2680/ivp/missions/s1_alpha/alpha.moos
+END
+alpha.bhv
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/moos-ivp-aro/!svn/ver/5473/branches-public/moos-ivp-2680/ivp/missions/s1_alpha/alpha.bhv
+END
+launch.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/moos-ivp-aro/!svn/ver/5473/branches-public/moos-ivp-2680/ivp/missions/s1_alpha/launch.sh
+END

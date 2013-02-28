@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/moos-ivp-extend/!svn/ver/55/trunk/src/pXRelayTest
+END
+pXRelayTest.moos
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/moos-ivp-extend/!svn/ver/29/trunk/src/pXRelayTest/pXRelayTest.moos
+END
+Relayer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/moos-ivp-extend/!svn/ver/53/trunk/src/pXRelayTest/Relayer.cpp
+END
+Relayer_Info.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/moos-ivp-extend/!svn/ver/53/trunk/src/pXRelayTest/Relayer_Info.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/moos-ivp-extend/!svn/ver/53/trunk/src/pXRelayTest/main.cpp
+END
+Relayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/moos-ivp-extend/!svn/ver/54/trunk/src/pXRelayTest/Relayer.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/moos-ivp-extend/!svn/ver/55/trunk/src/pXRelayTest/CMakeLists.txt
+END
+Relayer_Info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/moos-ivp-extend/!svn/ver/53/trunk/src/pXRelayTest/Relayer_Info.cpp
+END

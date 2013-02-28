@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pFactorTest config block
+
+ProcessConfig = pFactorTest
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+

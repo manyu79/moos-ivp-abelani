@@ -1,0 +1,62 @@
+/*************************************
+/       NAME: ABelani
+/       ORGN: MIT
+/       File: AcoustPair.h
+/       Date: 02/24/2013
+/*************************************/
+
+#ifndef AcousticPair_HEADER
+#define AcousticPair_HEADER
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class AcousticPair :
+{
+ public:
+  AcoustPair() {
+    vector<int> temp(3,0);
+    source_state = temp;
+    target_state = temp;
+  }  
+
+
+  // setting and getting source and target positions
+  bool set_source(double[3] inarr);
+  bool set_src_x(double inx) {source_state[0]=inx;};
+  bool set_src_y(double iny);
+  bool set_src_d(double ind);
+  double[3] get_source();
+  bool set_target(double[3] inarr);
+  bool set_targ_x(double inx);
+  bool set_targ_y(double iny);
+  bool set_targ_d(double ind);
+  double[3] get_target();
+  double get_radius();
+  bool isPairSet();
+
+  // setting and getting the environment parameters
+  bool set_surface_c(double C_0);
+  bool set_gradient_c(double G_0);
+  bool set_water_depth(double dep);
+  
+  // path functions
+  bool exists_path();
+  double beam_angle();
+  double closest_path();
+  
+ protected:
+  
+  
+ private:
+  
+  double[3] source_state;
+  double[3] target_state;
+  double initial_angle;
+  double water_depth;
+  double C_0;
+  double G_0;
+  
+}

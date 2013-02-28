@@ -1,0 +1,76 @@
+// MOOS file
+
+ServerHost = localhost
+ServerPort = 9000
+
+ProcessConfig = ANTLER
+{
+  MSBetweenLaunches = 200
+
+  Run = MOOSDB	      @ NewConsole = false
+  Run = pFactor	      @ NewConsole = false
+  Run = pFactorTest   @ NewConsole = false
+  Run = uTimerScript  @	NewConsole = false
+  Run = uXMS	      @	NewConsole = true ~ uXMS_Primes
+  Run = uXMS	      @	NewConsole = true ~ uXMS_Output
+  Run = uXMS	      @	NewConsole = true ~ uXMS_Valid
+  
+}
+
+ProcessConfig = pFactor
+}
+  AppTick   = 4
+  CommsTick = 4
+}
+
+ProcessConfig = pFactorTest
+}
+  AppTick   = 4
+  CommsTick = 4
+}
+
+ProcessConfig = uTimerScript
+{
+  AppTick    = 4
+  CommsTick  = 4
+
+  paused     = false
+
+  event      = var=NUM_VALUE, val="$(15)", time=0.25
+  event	     = var=NUM_VALUE, val="$(9)",  time=0.50
+  event	     = var=NUM_VALUE, val="$(7)",  time=0.75
+  event	     = var=NUM_VALUE, val="$(5)",  time=1.00
+
+  reset_max  = nolimit
+  reset_time = all-posted
+}
+
+ProcessConfig = uXMS_Primes
+{
+  AppTick   = 4
+  CommsTick = 4
+
+  VAR = NUM_VALUE, PRIME_RESULT, PRIME_RESULT_VALID
+  HISTORY_VAR = NUM_VALUE
+  DISPLAY_HISTORY_VAR = true
+}
+
+ProcessConfig = uXMS_Output
+{
+  AppTick   = 4
+  CommsTick = 4
+
+  VAR = NUM_VALUE, PRIME_RESULT, PRIME_RESULT_VALID
+  HISTORY_VAR = PRIME_RESULT
+  DISPLAY_HISTORY_VAR = true
+}
+
+ProcessConfig = uXMS_Valid
+{
+  AppTick   = 4
+  CommsTick = 4
+
+  VAR = NUM_VALUE, PRIME_RESULT, PRIME_RESULT_VALID
+  HISTORY_VAR = PRIME_RESULT_VALID
+  DISPLAY_HISTORY_VAR = true
+}

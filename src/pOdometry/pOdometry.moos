@@ -1,0 +1,9 @@
+=============================================================== 
+pXRelay Example MOOS Configuration                              
+=============================================================== 
+                                                                
+ProcessConfig = pOdometry                                         
+{                                                               
+  AppTick   = 4                                                 
+  CommsTick = 4                                                 
+}                     

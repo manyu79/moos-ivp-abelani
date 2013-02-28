@@ -1,0 +1,36 @@
+/************************************************************/
+/*    NAME: ABelani                                              */
+/*    ORGN: MIT                                             */
+/*    FILE: FactorTest.h                                          */
+/*    DATE:                                                 */
+/************************************************************/
+
+#ifndef FactorTest_HEADER
+#define FactorTest_HEADER
+
+#include "MOOS/libMOOS/MOOSLib.h"
+
+class FactorTest : public CMOOSApp
+{
+ public:
+   FactorTest();
+   ~FactorTest();
+
+ protected:
+   bool OnNewMail(MOOSMSG_LIST &NewMail);
+   bool Iterate();
+   bool OnConnectToServer();
+   bool OnStartUp();
+   void RegisterVariables();
+
+ private: // Configuration variables
+
+ private: // State variables
+   unsigned int m_iterations;
+   double       m_timewarp;
+   
+   long unsigned int prime;
+   
+};
+
+#endif 
