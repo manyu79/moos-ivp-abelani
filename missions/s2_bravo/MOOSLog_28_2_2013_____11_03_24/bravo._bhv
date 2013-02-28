@@ -1,0 +1,39 @@
+//--------    FILE: bravo.bhv   -------------
+
+initialize   DEPLOY = false
+initialize   RETURN = false
+
+//---------------------------------------------
+Behavior = BHV_Loiter
+{
+  name      = init_loiter
+  priority  = 100
+  updates   = UP_LOITER
+  duration  = 150
+  condition = DEPLOY = true
+  endflag   = RETURN = true
+  
+  speed	       = 1.3
+  radius       = 4
+  polygon      = format=radial, x=0,y=-75, radius=30, pts=8, snap=1
+  visual_hints = label=loiter_zone
+}
+
+//----------------------------------------------
+Behavior=BHV_Waypoint
+{
+  name       = waypt_return
+  pwt        = 100
+  condition  = RETURN = true
+  condition  = DEPLOY = true
+  perpetual  = true
+  endflag    = RETURN = false
+  endflag    = DEPLOY = false
+  endflag    = MISSION = complete
+
+           speed = 2.0
+  capture_radius = 2.0
+     slip_radius = 8.0
+          points = 0,0
+}
+

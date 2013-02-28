@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_28_2_2013_____12_51_18/MOOSLog_28_2_2013_____12_51_18.ylog
+%% FILE OPENED ON  Thu Feb 28 12:51:18 2013
+%% LOGSTART               40862216339.9
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+12.82468   MOOS_DEBUG           pMarinePID           ** NEW CONTROLLER GAINS ARE ** 
+12.82543   MOOS_DEBUG           pMarinePID           YAW_PID_KP             = 1.200 
+12.82561   MOOS_DEBUG           pMarinePID           YAW_PID_KD             = 0.000 
+12.82579   MOOS_DEBUG           pMarinePID           YAW_PID_KI             = 0.300 
+12.82597   MOOS_DEBUG           pMarinePID           YAW_PID_INTEGRAL_LIMIT = 0.070 
+12.82624   MOOS_DEBUG           pMarinePID           MAXRUDDER              = 100.000 
+12.97282   MOOS_DEBUG           pMarinePID           SPEED_PID_KP           = 1.000 
+12.97312   MOOS_DEBUG           pMarinePID           SPEED_PID_KD           = 0.000 
+12.9733    MOOS_DEBUG           pMarinePID           SPEED_PID_KI           = 0.000 
+12.97348   MOOS_DEBUG           pMarinePID           SPEED_PID_KI_LIMIT     = 0.070 
+12.97363   MOOS_DEBUG           pMarinePID           MAXTHRUST              = 100.000 
+13.14307   MOOS_DEBUG           pMarinePID           Z_TO_PITCH_PID_KP      = 0.120 
+13.14391   MOOS_DEBUG           pMarinePID           Z_TO_PITCH_PID_KD      = 0.100 
+13.1441    MOOS_DEBUG           pMarinePID           Z_TO_PITCH_PID_KI      = 0.004 
+13.14427   MOOS_DEBUG           pMarinePID           Z_TO_PITCH_PID_KI_LIMIT= 0.050 
+13.14452   MOOS_DEBUG           pMarinePID           MAXELEVATOR            = 13.000 
+13.28616   MOOS_DEBUG           pMarinePID           PITCH_PID_KP           = 1.500 
+13.28682   MOOS_DEBUG           pMarinePID           PITCH_PID_KD           = 0.300 
+13.287     MOOS_DEBUG           pMarinePID           PITCH_PID_KI           = 0.004 
+13.28718   MOOS_DEBUG           pMarinePID           PITCH_PID_KI_LIMIT     = 0.000 
+13.28733   MOOS_DEBUG           pMarinePID           MAXPITCH               = 0.262 
+19.18732   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: ManualOverride 
+158.3807   MOOS_DEBUG           pMarinePID           pMarinePID Control Is On 
+158.382    MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+158.4912   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: NothingToDo 
+158.7367   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+359.1215   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+361.14     MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+419.4352   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+619.6801   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+621.7354   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+680.1135   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+880.5167   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+882.5577   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+940.8294   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+1141.09    MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+1143.152   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+1201.345   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+1401.688   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+1403.738   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+1462.118   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+1662.603   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+1664.662   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+1722.902   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+1923.399   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+1925.433   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+1983.895   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+2184.26    MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+2186.302   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+2244.537   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+2444.906   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+2446.96    MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+2505.173   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+2705.629   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+2707.691   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+2766.009   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+2966.479   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+2968.512   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+3026.787   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+3227.149   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+3229.193   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+3287.608   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+3487.892   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+3489.943   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+3548.164   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+3748.483   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+3750.522   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+3808.94    MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+4009.361   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+4011.419   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+4069.73    MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+4270.028   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+4272.061   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+4330.277   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+4530.732   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+4532.774   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+4591.131   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+4791.531   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+4793.589   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+4851.805   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+5052.067   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+5054.101   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+5112.429   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+5312.676   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+5314.7     MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+5373.107   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+5573.474   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+5575.503   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+5633.808   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+5834.219   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+5836.286   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+5894.641   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+6094.908   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+6096.952   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+6155.184   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+6355.605   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+6357.641   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+6415.904   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+6616.361   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+6618.41    MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+6676.85    MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+6877.249   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+6879.309   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+6937.6     MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+7137.956   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+7140.015   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+7198.461   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+7398.954   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+7400.995   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+7459.392   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+7659.745   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+7661.796   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+7720.204   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+7920.507   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+7922.588   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+7980.908   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+8181.363   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+8183.41    MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+8241.748   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+8442.231   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+8444.295   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+8502.555   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+8702.946   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+8704.965   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+8763.319   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+8963.593   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+8965.626   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+9023.925   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+9224.332   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+9226.398   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+9284.584   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+9484.993   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+9487.019   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+9545.283   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+9745.583   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+9747.616   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+9806       MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+10006.37   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+10008.4    MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+10066.83   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+10267.32   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+10269.39   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+10327.67   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+10527.94   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+10529.97   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+10588.25   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+10788.5    MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+10790.55   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+10848.84   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: clear 
+11049.26   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: MissingDecVars:speed,course 
+11051.29   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
