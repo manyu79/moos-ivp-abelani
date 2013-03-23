@@ -1,0 +1,266 @@
+//*******************************************************
+// ShoreSide Configuration File
+//
+
+ServerHost = localhost
+ServerPort = $(SPORT)
+Community  = $(SNAME)
+
+#include plug_origin_warp.moos
+  
+//--------------------------------------------------------
+Processconfig = ANTLER
+{
+  MSBetweenLaunches = 100
+
+  Run = MOOSDB          @ NewConsole = false
+  Run = uTimerScript    @ NewConsole = false
+  Run = pMarineViewer   @ NewConsole = false
+//  Run = pLogger         @ NewConsole = false
+  Run = uProcessWatch   @ NewConsole = false
+  Run = pShare          @ NewConsole = false
+  Run = pHostInfo       @ NewConsole = false
+  Run = uFldShoreBroker @ NewConsole = false
+  Run = pPointAssign	@ NewConsole = false
+  Run = uXMS		@ NewConsole = true
+
+}
+
+#include plug_pShare.moos
+
+
+//--------------------------------------------------
+ProcessConfig = uXMS
+{
+  AppTick   = 4
+  CommsTick = 4
+
+  var = VISIT_POINT , VISIT_POINT_HENRY , VISIT_POINT_GILDA , POINT_READY , UTS_STATUS_POINTS , PATH_STATUS
+  history_var = VISIT_POINT_GILDA
+}
+
+//--------------------------------------------------
+ProcessConfig = pPointAssign
+{
+ AppTick   = 4
+ CommsTick = 4
+
+ // splitting method can be:
+ // alternate - switches points in an alternating fashion (default)
+ // ns=#      - assigns points by a north-south region, # is the ns coordinate(default is 0)
+ // ew=#      - assigns points by an east-west region, # is the ns coordinate(default is 0)  
+
+ split_method = ew=50
+}
+
+//--------------------------------------------------
+// uFldShoreBroker Configuration Block
+
+ProcessConfig = uFldShoreBroker
+{
+  AppTick       = 1
+  CommsTick     = 1
+
+  // Note: [QBRIDGE = FOO]  is shorthand for                    
+  //       [BRIDGE = src=FOO_$V,  alias=FOO] and                
+  //       [BRIDGE = src=FOO_ALL, alias=FOO]
+
+  QBRIDGE  = DEPLOY, RETURN, END
+  QBRIDGE  = MOOS_MANUAL_OVERIDE, APPCAST_REQ
+
+  BRIDGE   = src=VISIT_POINT_$V, alias=VISIT_POINT
+  BRIDGE   = src=HELM_MAP_CLEAR, alias=HELM_MAP_CLEAR
+}
+
+//--------------------------------------------------
+// pHostInfo configuration block
+
+ProcessConfig = pHostInfo
+{
+  AppTick 	= 2
+  CommsTick 	= 2
+}
+
+//--------------------------------------------------
+// pLogger Configuration Block
+
+ProcessConfig = pLogger
+{
+  AppTick       = 10
+  CommsTick     = 10
+  
+  File          = LOG_SHORESIDE
+  PATH          = ./
+  SyncLog       = true @ 0.2
+  AsyncLog      = true
+  FileTimeStamp = true
+
+  // Log it all!!!!!
+  WildCardLogging = true 
+  WildCardOmitPattern = *_STATUS
+}
+
+
+//--------------------------------------------------------
+ProcessConfig = pMarineViewer
+{
+  AppTick    = 4
+  CommsTick  = 4
+
+  TIFF_FILE            = forrest19.tif
+  set_pan_x            = -90
+  set_pan_y            = -280
+  zoom                 = 0.65
+  vehicles_shape_scale = 1.5
+  vehicles_name_viewable = names
+
+  stale_vehicles_viewable = true
+  
+  appcast_viewable = true
+  appcast_color_scheme = indigo
+
+  SCOPE = DEPLOY
+
+  BUTTON_ONE   = DEPLOY  # DEPLOY_ALL=true 
+  BUTTON_ONE   = MOOS_MANUAL_OVERIDE_ALL=false # END_ALL=false
+  BUTTON_ONE   = RETURN_ALL=false
+  BUTTON_TWO   = RETURN  # RETURN_ALL=true # END_ALL=true
+}
+
+//--------------------------------------------------------
+ProcessConfig = uProcessWatch
+{
+  AppTick   = 1
+  CommsTick = 1
+
+  ALLOW_RETRACTIONS = true
+  
+  WATCH_ALL = true      // default is true
+
+  NOWATCH = uXMS*
+  NOWATCH = uPokeDB*
+
+  SUMMARY_WAIT = 12
+}
+
+//--------------------------------------------------------
+ProcessConfig = uTimerScript
+{
+  AppTick   = 4
+  CommsTick = 4
+
+
+  delay_start = 100  
+  paused      = false
+  script_name = POINTS_GEN
+  reset_max   = 0
+  reset_time   = end
+  status_var  = UTS_STATUS_POINTS
+  condition   = POINT_READY = true
+  
+  randvar = varname=XP , min=-25  , max=200 , key=at_post
+  randvar = varname=YP , min=-175 , max=-25 , key=at_post 
+  
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=10
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=11
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=12
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=13
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=14
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=15
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=16
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=17
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=18
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=19
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=20
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=21
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=22
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=23
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=24
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=25
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=26
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=27
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=28
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=29
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=30
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=31
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=32
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=33
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=34
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=35
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=36
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=37
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=38
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=39
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=40
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=41
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=42
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=43
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=45
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=46
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=47
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=48
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=49
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=50
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=51
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=52
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=53
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=54
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=55
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=56
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=57
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=58
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=59
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=60
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=61
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=62
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=63
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=64
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=65
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=66
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=67
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=68
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=69
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=70
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=71
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=72
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=73
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=74
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=75
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=76
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=77
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=78
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=79
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=80
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=81
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=82
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=83
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=84
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=85
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=86
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=87
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=88
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=89
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=90
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=91
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=92
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=93
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=94
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=95
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=96
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=97
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=98
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=99
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=100
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=101
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=102
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=103
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=104
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=105
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=106
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=107
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=108
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=109
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=110
+  event = var=VISIT_POINT , val="last" , time = 111
+
+}

@@ -8,7 +8,6 @@
 #include <iterator>
 #include "MBUtils.h"
 #include "CommunicationAngle.h"
-#include "AcoustPair.h"
 
 using namespace std;
 
@@ -60,28 +59,28 @@ bool CommunicationAngle::OnNewMail(MOOSMSG_LIST &NewMail)
       RegisterVariables();
     }
     else if(key == "NAV_X"){
-      AcoustPair::set_src_x(dval);
+      APair.set_src_x(dval);
     }
     else if(key == "NAV_Y"){
-      AcoustPair::set_src_y(dval);
+      APair.set_src_y(dval);
     }
     else if(key == "NAV_DEPTH"){
-      AcoustPair::set_src_d(dval);
+      APair.set_src_d(dval);
     }
     else if(key == targ_name+"_NAV_X"){
-      AcoustPair::set_targ_x(dval);
+      APair.set_targ_x(dval);
     }
     else if(key == targ_name+"_NAV_Y"){
-      AcoustPair::set_targ_y(dval);
+      APair.set_targ_y(dval);
     }
     else if(key == targ_name+"_NAV_DEPTH"){
-      AcoustPair::set_targ_d(dval);
+      APair.set_targ_d(dval);
     }
     else if(key == targ_name+"_HEADING"){
-      AcoustPair::set_targ_heading(dval);
+      APair.set_targ_heading(dval);
     }
     else if(key == targ_name+"_SPEED"){
-      AcoustPair::set_targ_speed(dval);
+      APair.set_targ_speed(dval);
     }
   }
   
@@ -152,17 +151,19 @@ bool CommunicationAngle::OnStartUp()
 
 void CommunicationAngle::RegisterVariables()
 {
-  m_Comms.Register("VEHICLE_NAME", 0);
-  m_Comms.Register("COLLABORATOR_NAME", 0);
-  m_Comms.Register("NAV_X", 0);
-  m_Comms.Register("NAV_Y", 0);
-  m_Comms.Register("NAV_DEPTH", 0);
   if (targ_name != "Nobody"){
     m_Comms.Register(targ_name+"_NAV_X", 0);
     m_Comms.Register(targ_name+"_NAV_Y", 0);
     m_Comms.Register(targ_name+"_NAV_DEPTH", 0);
     m_Comms.Register(targ_name+"_HEADING", 0);
     m_Comms.Register(targ_name+"_SPEED", 0);
+  }
+  else{
+    m_Comms.Register("VEHICLE_NAME", 0);
+    m_Comms.Register("COLLABORATOR_NAME", 0);
+    m_Comms.Register("NAV_X", 0);
+    m_Comms.Register("NAV_Y", 0);
+    m_Comms.Register("NAV_DEPTH", 0);
   }
 }
 

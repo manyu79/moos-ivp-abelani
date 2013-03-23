@@ -1,0 +1,167 @@
+// Bravo Configuration file: M. Benjamin
+
+ServerHost = localhost
+ServerPort = 9002
+Community  = bravo
+
+MOOSTimeWarp = 1
+TERM_REPORTING = false
+
+// Forest Lake
+LatOrigin  = 43.825300 
+LongOrigin = -70.330400 
+
+// MIT Sailing Pavilion (use this one)
+// LatOrigin  = 42.358456 
+// LongOrigin = -71.087589
+
+
+//------------------------------------------
+// Antler configuration  block
+ProcessConfig = ANTLER
+{
+  MSBetweenLaunches = 200
+
+  Run = MOOSDB		@ NewConsole = false
+  Run = uSimMarine	@ NewConsole = false
+  Run = pMarinePID	@ NewConsole = false
+  Run = pHelmIvP	@ NewConsole = false
+  Run = uProcessWatch	@ NewConsole = false
+  Run = pNodeReporter	@ NewConsole = false
+  Run = uFldScope       @ NewConsole = false
+  Run = pShare		@ NewConsole = false
+}
+
+//------------------------------------------
+// pShare config
+
+ProcessConfig = pShare
+{
+  AppTick   = 4
+  CommsTick = 4
+  
+  input = route = localhost:9102
+  output = src_name=VIEW_SEGLIST , route=localhost:9100
+  output = src_name=VIEW_POINT , route=localhost:9100
+  output = src_name=NODE_REPORT_LOCAL , route=localhost:9100, dest_name=NODE_REPORT
+  
+}
+  
+//------------------------------------------
+// uFldScope config block
+
+ProcessConfig = uFldScope
+{
+  AppTick    = 2
+  CommsTick  = 2
+
+  scope = var=NODE_REPORT_LOCAL, key=NAME, fld=TIME, alias=Time
+  scope = var=NODE_REPORT_LOCAL, key=NAME, fld=MODE
+  scope = var=ODOMETRY_REPORT, key=vname, fld=total_dist, alias=TotDist
+  scope = var=ODOMETRY_REPORT, key=vname, fld=trip_dist, alias=TripDist
+  scope = var=SPEED_REPORT, key=vname, fld=avg_spd, alias=Speed
+
+  layout = MODE, Time
+  layout = MODE, Time, speed
+  layout = speed, Mode, trip_dist
+}
+
+
+//------------------------------------------
+// uProcessWatch config block
+
+ProcessConfig = uProcessWatch
+{
+  AppTick   = 4
+  CommsTick = 4
+
+  term_report_interval = 0.8
+
+  summary_wait = 5
+
+  nowatch   = uXMS*
+  nowatch   = uPokeDB*
+  nowatch   = uTermCommand*
+  watch_all = true
+}
+
+
+//------------------------------------------
+// uSimMarine config block
+
+ProcessConfig = uSimMarine
+{
+  AppTick	= 4
+  CommsTick	= 4
+
+  start_x       = 0
+  start_y       = -10
+  start_speed   = 0
+  start_heading = 180
+
+  prefix        = NAV
+
+  turn_rate     = 40
+  thrust_map    = 0:0, 20:1, 40:2, 60:3, 80:4, 100:5
+}
+
+//------------------------------------------
+// pHelmIvP config block
+
+ProcessConfig = pHelmIvP
+{
+  MaxAppTick = 10
+  AppTick    = 4
+  CommsTick  = 4
+
+  behaviors  = bravo.bhv
+  domain     = course:0:359:360
+  domain     = speed:0:4:21
+}
+
+//------------------------------------------
+// pMarinePID config block
+
+ProcessConfig = pMarinePID
+{
+  AppTick    = 20
+  CommsTick  = 20
+
+  VERBOSE       = true
+  DEPTH_CONTROL = false
+
+  // SIM_INSTABILITY = 20
+
+  // Yaw PID controller
+  YAW_PID_KP		 = 1.2
+  YAW_PID_KD		 = 0.0
+  YAW_PID_KI		 = 0.3
+  YAW_PID_INTEGRAL_LIMIT = 0.07
+
+  // Speed PID controller
+  SPEED_PID_KP		 = 1.0
+  SPEED_PID_KD		 = 0.0
+  SPEED_PID_KI		 = 0.0
+  SPEED_PID_INTEGRAL_LIMIT = 0.07
+
+  //MAXIMUMS
+  MAXRUDDER    = 100
+  MAXTHRUST    = 100
+
+  // A non-zero SPEED_FACTOR overrides use of SPEED_PID
+  // Will set DESIRED_THRUST = DESIRED_SPEED * SPEED_FACTOR
+  SPEED_FACTOR = 20
+}
+
+//------------------------------------------
+// pNodeReporter config block
+
+ProcessConfig = pNodeReporter
+{
+  MaxAppTick    = 2
+  AppTick	= 2
+  CommsTick	= 2
+
+  platform_type   = KAYAK
+  platform_length = 4
+}

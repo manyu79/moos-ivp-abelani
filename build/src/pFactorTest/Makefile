@@ -30,24 +30,30 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /opt/local/bin/cmake -E remove -f
+
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /opt/local/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abelani/moos-ivp-abelani
+CMAKE_SOURCE_DIR = /Users/abelani/moos-ivp-abelani
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abelani/moos-ivp-abelani/build
+CMAKE_BINARY_DIR = /Users/abelani/moos-ivp-abelani/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -57,7 +63,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/local/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -66,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/abelani/moos-ivp-abelani/build/CMakeFiles /home/abelani/moos-ivp-abelani/build/src/pFactorTest/CMakeFiles/progress.marks
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abelani/moos-ivp-abelani/build/CMakeFiles 0
+	cd /Users/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/abelani/moos-ivp-abelani/build/CMakeFiles /Users/abelani/moos-ivp-abelani/build/src/pFactorTest/CMakeFiles/progress.marks
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abelani/moos-ivp-abelani/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/clean
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/clean
 .PHONY : clean
 
 # The main clean target
@@ -82,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/preinstall
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/preinstall
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/pFactorTest/CMakeFiles/pFactorTest.dir/rule:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/CMakeFiles/pFactorTest.dir/rule
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/pFactorTest/CMakeFiles/pFactorTest.dir/rule
 .PHONY : src/pFactorTest/CMakeFiles/pFactorTest.dir/rule
 
 # Convenience name for target.
@@ -106,7 +112,7 @@ pFactorTest: src/pFactorTest/CMakeFiles/pFactorTest.dir/rule
 
 # fast build rule for target.
 pFactorTest/fast:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/build
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/build
 .PHONY : pFactorTest/fast
 
 FactorTest.o: FactorTest.cpp.o
@@ -114,7 +120,7 @@ FactorTest.o: FactorTest.cpp.o
 
 # target to build an object file
 FactorTest.cpp.o:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest.cpp.o
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest.cpp.o
 .PHONY : FactorTest.cpp.o
 
 FactorTest.i: FactorTest.cpp.i
@@ -122,7 +128,7 @@ FactorTest.i: FactorTest.cpp.i
 
 # target to preprocess a source file
 FactorTest.cpp.i:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest.cpp.i
 .PHONY : FactorTest.cpp.i
 
 FactorTest.s: FactorTest.cpp.s
@@ -130,7 +136,7 @@ FactorTest.s: FactorTest.cpp.s
 
 # target to generate assembly for a file
 FactorTest.cpp.s:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest.cpp.s
 .PHONY : FactorTest.cpp.s
 
 FactorTest_Info.o: FactorTest_Info.cpp.o
@@ -138,7 +144,7 @@ FactorTest_Info.o: FactorTest_Info.cpp.o
 
 # target to build an object file
 FactorTest_Info.cpp.o:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest_Info.cpp.o
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest_Info.cpp.o
 .PHONY : FactorTest_Info.cpp.o
 
 FactorTest_Info.i: FactorTest_Info.cpp.i
@@ -146,7 +152,7 @@ FactorTest_Info.i: FactorTest_Info.cpp.i
 
 # target to preprocess a source file
 FactorTest_Info.cpp.i:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest_Info.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest_Info.cpp.i
 .PHONY : FactorTest_Info.cpp.i
 
 FactorTest_Info.s: FactorTest_Info.cpp.s
@@ -154,7 +160,7 @@ FactorTest_Info.s: FactorTest_Info.cpp.s
 
 # target to generate assembly for a file
 FactorTest_Info.cpp.s:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest_Info.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/FactorTest_Info.cpp.s
 .PHONY : FactorTest_Info.cpp.s
 
 main.o: main.cpp.o
@@ -162,7 +168,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/main.cpp.o
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -170,7 +176,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/main.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -178,7 +184,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/main.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/pFactorTest/CMakeFiles/pFactorTest.dir/build.make src/pFactorTest/CMakeFiles/pFactorTest.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -210,6 +216,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

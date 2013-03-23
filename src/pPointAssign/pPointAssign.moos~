@@ -1,0 +1,162 @@
+ServerHost = localhost
+ServerPort = 9000
+Community  = testbox
+
+
+ProcessConfig = ANTLER
+{
+  MSBetweenLaunches = 200
+
+  Run = MOOSDB          @ NewConsole = false
+  Run = uXMS		@ NewConsole = true
+  Run = pPointAssign 	@ NewConsole = false
+  Run = uTimerScript	@ NewConsole = false
+  Run = pGenPath	@ NewConsole = false
+
+}
+
+
+//------------------------------------------------
+ProcessConfig = pPointAssign
+{
+  AppTick   = 4
+  CommsTick = 4
+}
+
+//------------------------------------------------
+ProcessConfig = pGenPath
+{
+  AppTick   = 4
+  CommsTick = 4
+}
+
+//------------------------------------------------
+ProcessConfig = uXMS
+{
+  AppTick   = 4
+  CommsTick = 4
+
+  var = VISIT_POINT , VISIT_POINT_HENRY , VISIT_POINT_GILDA , PATH_UPDATE
+  history_var = VISIT_POINT_HENRY
+
+}
+
+//------------------------------------------------
+ProcessConfig = uTimerScript
+{
+  AppTick   = 4
+  CommsTick = 4
+
+  paused      = false
+  script_name = POINTS_GEN
+  reset_max   = 0
+  reset_time  = end
+  status_var  = UTS_STATUS_POINTS
+  condition   = POINT_READY = true
+  
+  randvar = varname=XP , min=-25  , max=200 , key=at_post
+  randvar = varname=YP , min=-175 , max=-25 , key=at_post 
+  
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="x=$[XP], y=$[YP], id=$[TCOUNT]" , time=0
+  event = var=VISIT_POINT , val="last"
+}
+

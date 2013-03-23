@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor.cpp
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor.cpp
 iterator
 -
 MBUtils.h
-/home/abelani/moos-ivp-abelani/src/pFactor/MBUtils.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/MBUtils.h
 Factor.h
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor.h
 stdlib.h
-/home/abelani/moos-ivp-abelani/src/pFactor/stdlib.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/stdlib.h
 vector
 -
 cstdlib
@@ -26,85 +26,85 @@ math.h
 iostream
 -
 
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor.h
 MOOS/libMOOS/MOOSLib.h
-/home/abelani/moos-ivp-abelani/src/pFactor/MOOS/libMOOS/MOOSLib.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/MOOS/libMOOS/MOOSLib.h
 stdint.h
 -
 vector
 -
 
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.cpp
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.cpp
 cstdlib
 -
 iostream
 -
 Factor_Info.h
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.h
 ColorParse.h
-/home/abelani/moos-ivp-abelani/src/pFactor/ColorParse.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/ColorParse.h
 ReleaseInfo.h
-/home/abelani/moos-ivp-abelani/src/pFactor/ReleaseInfo.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/ReleaseInfo.h
 
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.h
 
-/home/abelani/moos-ivp-abelani/src/pFactor/main.cpp
+/Users/abelani/moos-ivp-abelani/src/pFactor/main.cpp
 string
 -
 MBUtils.h
-/home/abelani/moos-ivp-abelani/src/pFactor/MBUtils.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/MBUtils.h
 ColorParse.h
-/home/abelani/moos-ivp-abelani/src/pFactor/ColorParse.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/ColorParse.h
 Factor.h
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor.h
 Factor_Info.h
-/home/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.h
+/Users/abelani/moos-ivp-abelani/src/pFactor/Factor_Info.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSApp.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSApp.h
 MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
 MOOS/libMOOS/Utils/ProcessConfigReader.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/ProcessConfigReader.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/ProcessConfigReader.h
 MOOS/libMOOS/Utils/CommandLineParser.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/CommandLineParser.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/CommandLineParser.h
 MOOS/libMOOS/Utils/ProcInfo.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/ProcInfo.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/ProcInfo.h
 MOOS/libMOOS/Comms/MOOSCommClient.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Comms/MOOSCommClient.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Comms/MOOSCommClient.h
 MOOS/libMOOS/Comms/MOOSVariable.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Comms/MOOSVariable.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Comms/MOOSVariable.h
 set
 -
 map
 -
 MOOS/libMOOS/Comms/MOOSAsyncCommClient.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Comms/MOOSAsyncCommClient.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Comms/MOOSAsyncCommClient.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSInstrument.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSInstrument.h
 MOOS/libMOOS/Utils/MOOSUtils.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/MOOSUtils.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/Utils/MOOSUtils.h
 MOOS/libMOOS/App/MOOSApp.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/App/MOOSApp.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOS/libMOOS/App/MOOSApp.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/ActiveMailQueue.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/ActiveMailQueue.h
 MOOS/libMOOS/Comms/MOOSMsg.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSMsg.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSMsg.h
 MOOS/libMOOS/Utils/MOOSThread.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
 MOOS/libMOOS/Utils/SafeList.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/SafeList.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/SafeList.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSAsyncCommClient.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSAsyncCommClient.h
 map
 -
 MOOS/libMOOS/Comms/MOOSCommClient.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommClient.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommClient.h
 MOOS/libMOOS/Utils/MOOSThread.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
 MOOS/libMOOS/Utils/SafeList.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/SafeList.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/SafeList.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommClient.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommClient.h
 iostream
 -
 iomanip
@@ -118,47 +118,47 @@ string
 memory
 -
 MOOS/libMOOS/Utils/MOOSLock.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSLock.h
 MOOS/libMOOS/Utils/MOOSThread.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
 MOOS/libMOOS/Comms/MOOSCommObject.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommObject.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommObject.h
 MOOS/libMOOS/Comms/ActiveMailQueue.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/ActiveMailQueue.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/ActiveMailQueue.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommObject.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommObject.h
 MOOSCommPkt.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommPkt.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommPkt.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommPkt.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommPkt.h
 list
 -
 MOOSMsg.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSMsg.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSMsg.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommServer.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommServer.h
 winsock2.h
 -
 windows.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/windows.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/windows.h
 winbase.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/winbase.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/winbase.h
 winnt.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/winnt.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/winnt.h
 sys/time.h
 -
 pthread.h
 -
 MOOS/libMOOS/Comms/MOOSCommObject.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommObject.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommObject.h
 MOOS/libMOOS/Comms/MOOSCommPkt.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommPkt.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Comms/MOOSCommPkt.h
 MOOS/libMOOS/Utils/MOOSLock.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSLock.h
 MOOS/libMOOS/Utils/MOOSThread.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/MOOSThread.h
 MOOS/libMOOS/Utils/CommandLineParser.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/CommandLineParser.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOS/libMOOS/Utils/CommandLineParser.h
 list
 -
 map
@@ -166,131 +166,131 @@ map
 set
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSMsg.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSMsg.h
 string
 -
 vector
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSVariable.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSVariable.h
 MOOSMsg.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSMsg.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSMsg.h
 iomanip
 -
 ostream
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Bugcheck.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Bugcheck.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 string
 -
 iostream
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Config.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Config.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Event.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Event.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
 MOOS/libMOOS/Thirdparty/PocoBits/Event_WIN32.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Event_WIN32.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Event_WIN32.h
 MOOS/libMOOS/Thirdparty/PocoBits/Event_POSIX.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Event_POSIX.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Event_POSIX.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Event_POSIX.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Event_POSIX.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
 pthread.h
 -
 errno.h
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Event_WIN32.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Event_WIN32.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
 MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 stdexcept
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 MOOS/libMOOS/Thirdparty/PocoBits/Config.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Config.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Config.h
 MOOS/libMOOS/Thirdparty/PocoBits/Platform.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform.h
 MOOS/libMOOS/Thirdparty/PocoBits/Platform_WIN32.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform_WIN32.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform_WIN32.h
 MOOS/libMOOS/Thirdparty/PocoBits/Platform_VMS.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform_VMS.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform_VMS.h
 MOOS/libMOOS/Thirdparty/PocoBits/Platform_POSIX.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform_POSIX.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Platform_POSIX.h
 MOOS/libMOOS/Thirdparty/PocoBits/Bugcheck.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Bugcheck.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Bugcheck.h
 MOOS/libMOOS/Thirdparty/PocoBits/Types.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Types.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Types.h
 string
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Mutex.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Mutex.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
 MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
 MOOS/libMOOS/Thirdparty/PocoBits/Mutex_WIN32.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_WIN32.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_WIN32.h
 MOOS/libMOOS/Thirdparty/PocoBits/Mutex_POSIX.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_POSIX.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_POSIX.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_POSIX.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_POSIX.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
 pthread.h
 -
 errno.h
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_WIN32.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Mutex_WIN32.h
 MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Exception.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform_POSIX.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform_POSIX.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform_VMS.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform_VMS.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform_WIN32.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Platform_WIN32.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Types.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/Types.h
 MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/MOOS/libMOOS/Thirdparty/PocoBits/Foundation.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/PocoBits/include/MOOS/libMOOS/Thirdparty/PocoBits/UnWindows.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/CommandLineParser.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/CommandLineParser.h
 memory
 -
 vector
@@ -298,11 +298,11 @@ vector
 string
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSException.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSException.h
 string
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSFileReader.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSFileReader.h
 fstream
 -
 string
@@ -310,7 +310,7 @@ string
 map
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSLinuxSerialPort.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSLinuxSerialPort.h
 string
 -
 fcntl.h
@@ -326,49 +326,49 @@ unistd.h
 stdio.h
 -
 MOOS/libMOOS/Utils/MOOSSerialPort.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSSerialPort.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSSerialPort.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSLock.h
 windows.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/windows.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/windows.h
 winbase.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winbase.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winbase.h
 winnt.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winnt.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winnt.h
 pthread.h
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSNTSerialPort.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSNTSerialPort.h
 winsock2.h
 -
 windows.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/windows.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/windows.h
 winbase.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winbase.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winbase.h
 winnt.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winnt.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/winnt.h
 MOOS/libMOOS/Utils/NTSerial.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/NTSerial.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/NTSerial.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSPlaybackStatus.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSPlaybackStatus.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSSerialPort.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSSerialPort.h
 MOOS/libMOOS/Utils/MOOSLock.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSLock.h
 string
 -
 list
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSThread.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSThread.h
 MOOS/libMOOS/Utils/MOOSLock.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSLock.h
 MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
 errno.h
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
 string
 -
 list
@@ -380,29 +380,29 @@ sstream
 algorithm
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtils.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtils.h
 MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
 MOOS/libMOOS/Utils/MOOSFileReader.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSFileReader.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSFileReader.h
 MOOS/libMOOS/Utils/ProcessConfigReader.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/ProcessConfigReader.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/ProcessConfigReader.h
 MOOS/libMOOS/Utils/MOOSNTSerialPort.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSNTSerialPort.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSNTSerialPort.h
 MOOS/libMOOS/Utils/MOOSLinuxSerialPort.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSLinuxSerialPort.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSLinuxSerialPort.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/NTSerial.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/NTSerial.h
 MOOSSerialPort.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSSerialPort.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSSerialPort.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/ProcInfo.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/ProcInfo.h
 memory
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/ProcessConfigReader.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/ProcessConfigReader.h
 MOOS/libMOOS/Utils/MOOSFileReader.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSFileReader.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Utils/MOOSFileReader.h
 string
 -
 list
@@ -410,49 +410,49 @@ list
 vector
 -
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/SafeList.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/SafeList.h
 list
 -
 MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Thirdparty/PocoBits/ScopedLock.h
 MOOS/libMOOS/Thirdparty/PocoBits/Event.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Thirdparty/PocoBits/Event.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Thirdparty/PocoBits/Event.h
 MOOS/libMOOS/Thirdparty/PocoBits/Mutex.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Thirdparty/PocoBits/Mutex.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOS/libMOOS/Thirdparty/PocoBits/Mutex.h
 
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOSLib.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOSLib.h
 winsock2.h
 -
 windows.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/windows.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/windows.h
 winbase.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/winbase.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/winbase.h
 winnt.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/winnt.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/winnt.h
 MOOS/libMOOS/Utils/MOOSException.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Utils/MOOSException.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Utils/MOOSException.h
 MOOS/libMOOS/Utils/MOOSPlaybackStatus.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Utils/MOOSPlaybackStatus.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Utils/MOOSPlaybackStatus.h
 MOOS/libMOOS/Utils/MOOSUtils.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Utils/MOOSUtils.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Utils/MOOSUtils.h
 MOOS/libMOOS/Comms/MOOSCommServer.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Comms/MOOSCommServer.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Comms/MOOSCommServer.h
 MOOS/libMOOS/Comms/MOOSCommClient.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Comms/MOOSCommClient.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Comms/MOOSCommClient.h
 MOOS/libMOOS/Comms/MOOSMsg.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Comms/MOOSMsg.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/Comms/MOOSMsg.h
 MOOS/libMOOS/App/MOOSApp.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/App/MOOSApp.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/App/MOOSApp.h
 MOOS/libMOOS/App/MOOSInstrument.h
-/home/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/App/MOOSInstrument.h
+/Users/abelani/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/App/MOOSInstrument.h
 
-/home/abelani/moos-ivp/ivp/src/lib_mbutil/ColorParse.h
+/Users/abelani/moos-ivp/ivp/src/lib_mbutil/ColorParse.h
 vector
 -
 string
 -
 
-/home/abelani/moos-ivp/ivp/src/lib_mbutil/MBUtils.h
+/Users/abelani/moos-ivp/ivp/src/lib_mbutil/MBUtils.h
 vector
 -
 string
@@ -462,7 +462,7 @@ set
 time.h
 -
 
-/home/abelani/moos-ivp/ivp/src/lib_mbutil/ReleaseInfo.h
+/Users/abelani/moos-ivp/ivp/src/lib_mbutil/ReleaseInfo.h
 string
 -
 

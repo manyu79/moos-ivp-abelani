@@ -1,1 +1,1 @@
-/usr/bin/c++    -fPIC -g    CMakeFiles/pExampleApp.dir/main.cpp.o  -o ../../../bin/pExampleApp -rdynamic -L/home/abelani/moos-ivp/lib /home/abelani/moos-ivp/MOOS/MOOSCore/lib/libMOOS.a -lm -lpthread -Wl,-rpath,/home/abelani/moos-ivp/lib 
+/usr/bin/c++    -fPIC -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/pExampleApp.dir/main.cpp.o  -o ../../../bin/pExampleApp  -L/Users/abelani/moos-ivp/lib  /Users/abelani/moos-ivp/MOOS/MOOSCore/lib/libMOOS.a -lm -lpthread 

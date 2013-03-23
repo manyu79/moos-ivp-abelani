@@ -12,8 +12,6 @@
 #include "AcoustPair.h"
 #include <string>
 
-using namespace std;
-
 class CommunicationAngle : public CMOOSApp
 {
  public:
@@ -33,13 +31,13 @@ class CommunicationAngle : public CMOOSApp
    unsigned int m_iterations;
    double       m_timewarp;
    
-   string my_name;
-   string targ_name;
+   std::string my_name;
+   std::string targ_name;
    double C_0;
    double G_0;
    double depth_0;
    
-   AcoustPair AcoustPair;
+   AcoustPair APair;
 
 };
 

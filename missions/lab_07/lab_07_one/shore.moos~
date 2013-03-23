@@ -1,0 +1,161 @@
+// Alpha Configuration file: M. Benjamin
+
+ServerHost = localhost
+ServerPort = 9000
+Community  = shore
+
+MOOSTimeWarp = 1
+TERM_REPORTING = false
+
+// Forest Lake
+LatOrigin  = 43.825300 
+LongOrigin = -70.330400 
+
+// MIT Sailing Pavilion (use this one)
+// LatOrigin  = 42.358456 
+// LongOrigin = -71.087589
+
+
+//------------------------------------------
+// Antler configuration  block
+ProcessConfig = ANTLER
+{
+  MSBetweenLaunches = 200
+
+  Run = MOOSDB		@ NewConsole = false
+  Run = uFldScope       @ NewConsole = false
+  Run = pMarineViewer	@ NewConsole = false
+  Run = pShare		@ NewConsole = false
+}
+
+ProcessConfig = uMAC
+{
+ AppTick = 5
+ CommsTick = 5
+}
+
+//------------------------------------------
+// pShare configuration
+
+ProcessConfig = pShare
+{
+  AppTick   = 4
+  CommsTick = 4
+  
+  input = route = localhost:9100
+
+  // To Alpha
+  output = src_name=DEPLOY_ALPHA , route=localhost:9101 , dest_name=DEPLOY
+  output = src_name=RETURN_ALPHA , route=localhost:9101 , dest_name=RETURN
+  output = src_name=MOOS_MANUAL_OVERIDE , route=localhost:9101
+  output = src_name=RETURN_UPDATES_ALPHA , route=localhost:9101 , dest_name=RETURN_UPDATES
+  output = src_name=APPCAST_REQ_ALL , route=localhost:9101
+  output = src_name=APPCAST_REQ_ALPHA , route=localhost:9101
+
+  // To Bravo
+  output = src_name=DEPLOY_BRAVO , route=localhost:9102 , dest_name=DEPLOY
+  output = src_name=RETURN_BRAVO , route=localhost:9102 , dest_name=RETURN
+  output = src_name=MOOS_MANUAL_OVERIDE , route=localhost:9102
+  output = src_name=RETURN_UPDATES_BRAVO , route=localhost:9102 , dest_name=RETURN_UPDATES
+  output = src_name=APPCAST_REQ_ALL , route=localhost:9102
+  output = src_name=APPCAST_REQ_BRAVO , route=localhost:9102
+} 
+
+//------------------------------------------
+// uFldScope config block
+
+ProcessConfig = uFldScope
+{
+  AppTick    = 2
+  CommsTick  = 2
+
+  scope = var=NODE_REPORT_LOCAL, key=NAME, fld=TIME, alias=Time
+  scope = var=NODE_REPORT_LOCAL, key=NAME, fld=MODE
+  scope = var=ODOMETRY_REPORT, key=vname, fld=total_dist, alias=TotDist
+  scope = var=ODOMETRY_REPORT, key=vname, fld=trip_dist, alias=TripDist
+  scope = var=SPEED_REPORT, key=vname, fld=avg_spd, alias=Speed
+
+  layout = MODE, Time
+  layout = MODE, Time, speed
+  layout = speed, Mode, trip_dist
+}
+
+//------------------------------------------
+// pMarineViewer config block
+
+ProcessConfig = pMarineViewer
+{
+  AppTick    = 4
+  CommsTick  = 4
+
+  tiff_file            = forrest19.tif
+
+  set_pan_x            = -90
+  set_pan_y            = -280
+  zoom                 = 0.65
+  vehicle_shape_scale  = 1.5
+  hash_delta           = 50
+  hash_shade           = 0.4
+  hash_viewable        = true
+
+  trails_point_size   = 1
+
+  // Appcast configuration
+  appcast_height       = 75
+  appcast_width        = 30
+  appcast_viewable     = true
+  appcast_color_scheme = indigo
+  nodes_font_size      = medium
+  procs_font_size      = medium
+  appcast_font_size    = small
+  
+  //datum_viewable = true
+  //datum_size     = 18
+  //gui_size = small
+
+  left_context[return-A-NOW] = RETURN_UPDATES_ALPHA = "points=$(XPOS),$(YPOS)"
+  left_context[return-A-NOW] = VIEW_POINT = x=$(XPOS),y=$(YPOS),label=A-c'mereNOW
+  left_context[return-A-NOW] = RETURN_ALPHA=true
+
+  left_context[return-B-NOW] = RETURN_UPDATES_BRAVO = "points=$(XPOS),$(YPOS)"
+  left_context[return-B-NOW] = VIEW_POINT = x=$(XPOS),y=$(YPOS),label=B-c'mereNOW
+  left_context[return-B-NOW] = RETURN_BRAVO=true
+
+  left_context[return-update] = RETURN_UPDATES = "points=$(XPOS),$(YPOS)"
+  left_context[return-update] = VIEW_POINT = x=$(XPOS),y=$(YPOS),label=c'mere
+
+  left_context[survey-point] = DEPLOY=true
+  left_context[survey-point] = MOOS_MANUAL_OVERIDE=false
+  left_context[survey-point] = RETURN=false
+
+  left_context[clinteract] = VIEW_POINT = x=$(XPOS),y=$(YPOS),label=hello
+  left_context[clinteract] = VIEW_POLYGON = format=radial,x=$(XPOS),y=$(YPOS),radius=10,pts=8,edge_size=1,label=mypoly  
+
+  right_context[return] = DEPLOY=true
+  right_context[return] = MOOS_MANUAL_OVERIDE=false
+  right_context[return] = RETURN=false
+
+  scope  = RETURN
+  scope  = WPT_STAT
+  scope  = VIEW_SEGLIST
+  scope  = VIEW_POINT
+  scope  = VIEW_POLYGON
+  scope  = MVIEWER_LCLICK
+  scope  = MVIEWER_RCLICK
+
+  button_one = DEPLOY # DEPLOY_ALPHA=true # DEPLOY_BRAVO=true
+  button_one = MOOS_MANUAL_OVERIDE=false # RETURN_ALPHA=false # RETURN_BRAVO=false
+  button_two = RETURN:T # RETURN_ALPHA=true # RETURN_BRAVO=true
+  button_three = RETURN:F # RETURN_ALPHA=false # RETURN_BRAVO=false
+
+  action  = MENU_KEY=deploy-A # DEPLOY_ALPHA = true # RETURN_ALPHA = false
+  action+ = MENU_KEY=deploy-A # MOOS_MANUAL_OVERIDE=false
+  action  = MENU_KEY=deploy-B # DEPLOY_ALPHA = true # RETURN_APLHA = false
+  action+ = MENU_KEY=deploy-B # MOOS_MANUAL_OVERIDE=false
+  action  = RETURN_ALPHA=true
+  action  = RETURN_BRAVO=true
+  action  = RETURN_ALPHA=false
+  action  = RETURN_BRAVO=false
+  action  = UPDATES_RETURN=speed=1.4
+}
+

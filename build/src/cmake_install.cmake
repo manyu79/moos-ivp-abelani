@@ -1,4 +1,4 @@
-# Install script for directory: /home/abelani/moos-ivp-abelani/src
+# Install script for directory: /Users/abelani/moos-ivp-abelani/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,20 +27,20 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
   ENDIF(COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
-# Install shared libraries without execute permission?
-IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
-ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/abelani/moos-ivp-abelani/build/src/lib_behaviors-test/cmake_install.cmake")
-  INCLUDE("/home/abelani/moos-ivp-abelani/build/src/pXRelayTest/cmake_install.cmake")
-  INCLUDE("/home/abelani/moos-ivp-abelani/build/src/pExampleApp/cmake_install.cmake")
-  INCLUDE("/home/abelani/moos-ivp-abelani/build/src/pOdometry/cmake_install.cmake")
-  INCLUDE("/home/abelani/moos-ivp-abelani/build/src/pFactor/cmake_install.cmake")
-  INCLUDE("/home/abelani/moos-ivp-abelani/build/src/pFactorTest/cmake_install.cmake")
-  INCLUDE("/home/abelani/moos-ivp-abelani/build/src/pCommunicationAngle/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/lib_behaviors-test/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pXRelayTest/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pExampleApp/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pOdometry/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pFactor/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pFactorTest/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pCommunicationAngle/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pPointAssign/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pGenPath/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/uFldHazardMngr/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/pHazardPath/cmake_install.cmake")
+  INCLUDE("/Users/abelani/moos-ivp-abelani/build/src/sandbox/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

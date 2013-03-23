@@ -1,0 +1,153 @@
+/************************************************************/
+/*    NAME:                                               */
+/*    ORGN: MIT                                             */
+/*    FILE: GenPath.cpp                                        */
+/*    DATE:                                                 */
+/************************************************************/
+
+#include <iterator>
+#include "MBUtils.h"
+#include "GenPath.h"
+#include "stdlib.h"
+#include <vector>
+#include <string>
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+//---------------------------------------------------------
+// Constructor
+
+GenPath::GenPath()
+{
+  m_iterations = 0;
+  m_timewarp   = 1;
+  
+}
+
+//---------------------------------------------------------
+// Destructor
+
+GenPath::~GenPath()
+{
+}
+
+//---------------------------------------------------------
+// Procedure: OnNewMail
+
+bool GenPath::OnNewMail(MOOSMSG_LIST &NewMail)
+{
+  MOOSMSG_LIST::iterator p;
+
+  cout << "GOT MAIL!";
+   
+  for(p=NewMail.begin(); p!=NewMail.end(); p++) {
+    CMOOSMsg &msg = *p;
+
+    string key   = msg.GetKey();
+    string sval  = msg.GetString(); 
+
+    if (key=="VISIT_POINT"){
+      if(sval != "last"){
+	vector<string> svec = parseString(sval, ',');
+	for(int i = 0 ; i<svec.size(); i++){
+	  biteString(svec[i], '=');
+	}
+	double x_new = strtod(svec[0].c_str(),NULL);
+	double y_new = strtod(svec[1].c_str(),NULL);
+	my_list.insert_vertex(x_new, y_new, 0.0, "");
+      }
+      else{
+	cout << "SENDING THAT LIST";
+	hit_count = my_list.size();
+	string update_str = "points = ";
+	update_str += my_list.get_spec();
+	Notify("PATH_UPDATE", update_str); // UPDATES_VAR depends on your config
+	Notify("VISIT", "true");
+	Notify("LOITER", "false");
+      }
+    }
+    else if (key=="WPT_HIT"){
+      vector<string> svec = parseString(sval, ',');
+      for(int i = 0 ; i<svec.size(); i++){
+	biteString(svec[i], '=');
+      }
+      double x_new = strtod(svec[0].c_str(),NULL);
+      double y_new = strtod(svec[1].c_str(),NULL);
+      my_list.delete_vertex(x_new,y_new);
+      string visited = uintToString(hit_count - my_list.size());
+      string unvisited = uintToString(my_list.size());
+      string update_str = "total_visited="+visited+
+	", total_unvisited="+unvisited+" "+
+	vname;
+      Notify("PATH_STATUS", update_str);
+    }      
+  }	
+  return(true);
+}
+
+//---------------------------------------------------------
+// Procedure: OnConnectToServer
+
+bool GenPath::OnConnectToServer()
+{
+   // register for variables here
+   // possibly look at the mission file?
+   // m_MissionReader.GetConfigurationParam("Name", <string>);
+   // m_Comms.Register("VARNAME", 0);
+	
+   RegisterVariables();
+   return(true);
+}
+
+//---------------------------------------------------------
+// Procedure: Iterate()
+//            happens AppTick times per second
+
+bool GenPath::Iterate()
+{
+  m_iterations++;
+  return(true);
+}
+
+//---------------------------------------------------------
+// Procedure: OnStartUp()
+//            happens before connection is open
+
+bool GenPath::OnStartUp()
+{
+  list<string> sParams;
+  m_MissionReader.EnableVerbatimQuoting(false);
+  if(m_MissionReader.GetConfiguration(GetAppName(), sParams)) {
+    list<string>::iterator p;
+    for(p=sParams.begin(); p!=sParams.end(); p++) {
+      string original_line = *p;
+      string param = stripBlankEnds(toupper(biteString(*p, '=')));
+      string value = stripBlankEnds(*p);
+      
+      if(param == "VEHICLE_NAME") {
+        vname = "vname="+value;
+      }
+      else if(param == "BAR") {
+        //handled
+      }
+    }
+  }
+  
+  m_timewarp = GetMOOSTimeWarp();
+
+  RegisterVariables();	
+  return(true);
+}
+
+//---------------------------------------------------------
+// Procedure: RegisterVariables
+
+void GenPath::RegisterVariables()
+{
+  m_Comms.Register("VISIT_POINT", 0);
+  m_Comms.Register("WPT_HIT", 0);
+  Notify("POINT_READY","true");
+}
+

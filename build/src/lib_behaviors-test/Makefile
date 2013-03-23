@@ -30,24 +30,30 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /opt/local/bin/cmake -E remove -f
+
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /opt/local/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abelani/moos-ivp-abelani
+CMAKE_SOURCE_DIR = /Users/abelani/moos-ivp-abelani
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abelani/moos-ivp-abelani/build
+CMAKE_BINARY_DIR = /Users/abelani/moos-ivp-abelani/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -57,7 +63,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/local/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -66,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/abelani/moos-ivp-abelani/build/CMakeFiles /home/abelani/moos-ivp-abelani/build/src/lib_behaviors-test/CMakeFiles/progress.marks
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abelani/moos-ivp-abelani/build/CMakeFiles 0
+	cd /Users/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/abelani/moos-ivp-abelani/build/CMakeFiles /Users/abelani/moos-ivp-abelani/build/src/lib_behaviors-test/CMakeFiles/progress.marks
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abelani/moos-ivp-abelani/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/clean
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/clean
 .PHONY : clean
 
 # The main clean target
@@ -82,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/preinstall
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/preinstall
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule
 .PHONY : src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule
 
 # Convenience name for target.
@@ -106,7 +112,7 @@ BHV_SimpleWaypoint: src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rul
 
 # fast build rule for target.
 BHV_SimpleWaypoint/fast:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build
 .PHONY : BHV_SimpleWaypoint/fast
 
 AOF_SimpleWaypoint.o: AOF_SimpleWaypoint.cpp.o
@@ -114,7 +120,7 @@ AOF_SimpleWaypoint.o: AOF_SimpleWaypoint.cpp.o
 
 # target to build an object file
 AOF_SimpleWaypoint.cpp.o:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/AOF_SimpleWaypoint.cpp.o
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/AOF_SimpleWaypoint.cpp.o
 .PHONY : AOF_SimpleWaypoint.cpp.o
 
 AOF_SimpleWaypoint.i: AOF_SimpleWaypoint.cpp.i
@@ -122,7 +128,7 @@ AOF_SimpleWaypoint.i: AOF_SimpleWaypoint.cpp.i
 
 # target to preprocess a source file
 AOF_SimpleWaypoint.cpp.i:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/AOF_SimpleWaypoint.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/AOF_SimpleWaypoint.cpp.i
 .PHONY : AOF_SimpleWaypoint.cpp.i
 
 AOF_SimpleWaypoint.s: AOF_SimpleWaypoint.cpp.s
@@ -130,7 +136,7 @@ AOF_SimpleWaypoint.s: AOF_SimpleWaypoint.cpp.s
 
 # target to generate assembly for a file
 AOF_SimpleWaypoint.cpp.s:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/AOF_SimpleWaypoint.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/AOF_SimpleWaypoint.cpp.s
 .PHONY : AOF_SimpleWaypoint.cpp.s
 
 BHV_SimpleWaypoint.o: BHV_SimpleWaypoint.cpp.o
@@ -138,7 +144,7 @@ BHV_SimpleWaypoint.o: BHV_SimpleWaypoint.cpp.o
 
 # target to build an object file
 BHV_SimpleWaypoint.cpp.o:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/BHV_SimpleWaypoint.cpp.o
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/BHV_SimpleWaypoint.cpp.o
 .PHONY : BHV_SimpleWaypoint.cpp.o
 
 BHV_SimpleWaypoint.i: BHV_SimpleWaypoint.cpp.i
@@ -146,7 +152,7 @@ BHV_SimpleWaypoint.i: BHV_SimpleWaypoint.cpp.i
 
 # target to preprocess a source file
 BHV_SimpleWaypoint.cpp.i:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/BHV_SimpleWaypoint.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/BHV_SimpleWaypoint.cpp.i
 .PHONY : BHV_SimpleWaypoint.cpp.i
 
 BHV_SimpleWaypoint.s: BHV_SimpleWaypoint.cpp.s
@@ -154,7 +160,7 @@ BHV_SimpleWaypoint.s: BHV_SimpleWaypoint.cpp.s
 
 # target to generate assembly for a file
 BHV_SimpleWaypoint.cpp.s:
-	cd /home/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/BHV_SimpleWaypoint.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build && $(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/BHV_SimpleWaypoint.cpp.s
 .PHONY : BHV_SimpleWaypoint.cpp.s
 
 # Help Target
@@ -183,6 +189,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

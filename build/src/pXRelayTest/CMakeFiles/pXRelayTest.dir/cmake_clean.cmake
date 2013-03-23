@@ -2,7 +2,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/pXRelayTest.dir/Relayer.cpp.o"
   "CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o"
   "CMakeFiles/pXRelayTest.dir/main.cpp.o"
-  "../../../bin/pXRelayTest.pdb"
+  "pXRelayTest.pdb"
   "../../../bin/pXRelayTest"
 )
 

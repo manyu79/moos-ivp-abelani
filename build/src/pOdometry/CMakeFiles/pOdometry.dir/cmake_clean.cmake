@@ -2,7 +2,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/pOdometry.dir/PODO_MOOSApp.cpp.o"
   "CMakeFiles/pOdometry.dir/PODO_Info.cpp.o"
   "CMakeFiles/pOdometry.dir/main.cpp.o"
-  "../../../bin/pOdometry.pdb"
+  "pOdometry.pdb"
   "../../../bin/pOdometry"
 )
 

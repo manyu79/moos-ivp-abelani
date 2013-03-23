@@ -21,6 +21,11 @@ ADD_SUBDIRECTORY(pOdometry)
 ADD_SUBDIRECTORY(pFactor)
 ADD_SUBDIRECTORY(pFactorTest)
 ADD_SUBDIRECTORY(pCommunicationAngle)
+ADD_SUBDIRECTORY(pPointAssign)
+ADD_SUBDIRECTORY(pGenPath)
+ADD_SUBDIRECTORY(uFldHazardMngr)
+ADD_SUBDIRECTORY(pHazardPath)
+ADD_SUBDIRECTORY(sandbox)
 
 ##############################################################################
 #                           END of CMakeLists.txt

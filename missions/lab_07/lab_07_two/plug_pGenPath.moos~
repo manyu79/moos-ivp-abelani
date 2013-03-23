@@ -1,0 +1,17 @@
+//--------------------------------------------
+ProcessConfig = pGenPath
+{
+
+  AppTick   = 4
+  CommsTick = 4
+
+  VEHICLE_NAME=$(VNAME)
+
+  // splitting method can be:
+  // alternate - switches points in an alternating fashion (default)
+  // ns=#      - assigns points by a north-south region, # is the ns coordinate(default is 0)
+  // ew=#      - assigns points by an east-west region, # is the ns coordinate(default is 0)  
+
+  split_method = ew=50
+
+}

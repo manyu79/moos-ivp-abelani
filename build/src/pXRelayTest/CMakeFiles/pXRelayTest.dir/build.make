@@ -26,16 +26,22 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /opt/local/bin/cmake -E remove -f
+
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /opt/local/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abelani/moos-ivp-abelani
+CMAKE_SOURCE_DIR = /Users/abelani/moos-ivp-abelani
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abelani/moos-ivp-abelani/build
+CMAKE_BINARY_DIR = /Users/abelani/moos-ivp-abelani/build
 
 # Include any dependencies generated for this target.
 include src/pXRelayTest/CMakeFiles/pXRelayTest.dir/depend.make
@@ -48,17 +54,17 @@ include src/pXRelayTest/CMakeFiles/pXRelayTest.dir/flags.make
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.o: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/flags.make
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.o: ../src/pXRelayTest/Relayer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abelani/moos-ivp-abelani/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/abelani/moos-ivp-abelani/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.o"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pXRelayTest.dir/Relayer.cpp.o -c /home/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer.cpp
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pXRelayTest.dir/Relayer.cpp.o -c /Users/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer.cpp
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pXRelayTest.dir/Relayer.cpp.i"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer.cpp > CMakeFiles/pXRelayTest.dir/Relayer.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer.cpp > CMakeFiles/pXRelayTest.dir/Relayer.cpp.i
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pXRelayTest.dir/Relayer.cpp.s"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer.cpp -o CMakeFiles/pXRelayTest.dir/Relayer.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer.cpp -o CMakeFiles/pXRelayTest.dir/Relayer.cpp.s
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.o.requires:
 .PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.o.requires
@@ -71,17 +77,17 @@ src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.o.provides.build: src/pXR
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/flags.make
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o: ../src/pXRelayTest/Relayer_Info.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abelani/moos-ivp-abelani/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/abelani/moos-ivp-abelani/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o -c /home/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer_Info.cpp
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o -c /Users/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer_Info.cpp
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.i"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer_Info.cpp > CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer_Info.cpp > CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.i
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.s"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer_Info.cpp -o CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/abelani/moos-ivp-abelani/src/pXRelayTest/Relayer_Info.cpp -o CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.s
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o.requires:
 .PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o.requires
@@ -94,17 +100,17 @@ src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o.provides.build: sr
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.o: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/flags.make
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.o: ../src/pXRelayTest/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abelani/moos-ivp-abelani/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/abelani/moos-ivp-abelani/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.o"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pXRelayTest.dir/main.cpp.o -c /home/abelani/moos-ivp-abelani/src/pXRelayTest/main.cpp
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pXRelayTest.dir/main.cpp.o -c /Users/abelani/moos-ivp-abelani/src/pXRelayTest/main.cpp
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pXRelayTest.dir/main.cpp.i"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/abelani/moos-ivp-abelani/src/pXRelayTest/main.cpp > CMakeFiles/pXRelayTest.dir/main.cpp.i
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/abelani/moos-ivp-abelani/src/pXRelayTest/main.cpp > CMakeFiles/pXRelayTest.dir/main.cpp.i
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pXRelayTest.dir/main.cpp.s"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/abelani/moos-ivp-abelani/src/pXRelayTest/main.cpp -o CMakeFiles/pXRelayTest.dir/main.cpp.s
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/abelani/moos-ivp-abelani/src/pXRelayTest/main.cpp -o CMakeFiles/pXRelayTest.dir/main.cpp.s
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.o.requires:
 .PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.o.requires
@@ -127,11 +133,11 @@ pXRelayTest_EXTERNAL_OBJECTS =
 ../bin/pXRelayTest: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer.cpp.o
 ../bin/pXRelayTest: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/Relayer_Info.cpp.o
 ../bin/pXRelayTest: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/main.cpp.o
-../bin/pXRelayTest: /home/abelani/moos-ivp/MOOS/MOOSCore/lib/libMOOS.a
 ../bin/pXRelayTest: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make
+../bin/pXRelayTest: /Users/abelani/moos-ivp/MOOS/MOOSCore/lib/libMOOS.a
 ../bin/pXRelayTest: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/pXRelayTest"
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pXRelayTest.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pXRelayTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build: ../bin/pXRelayTest
@@ -143,10 +149,10 @@ src/pXRelayTest/CMakeFiles/pXRelayTest.dir/requires: src/pXRelayTest/CMakeFiles/
 .PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/requires
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean:
-	cd /home/abelani/moos-ivp-abelani/build/src/pXRelayTest && $(CMAKE_COMMAND) -P CMakeFiles/pXRelayTest.dir/cmake_clean.cmake
+	cd /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest && $(CMAKE_COMMAND) -P CMakeFiles/pXRelayTest.dir/cmake_clean.cmake
 .PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean
 
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/depend:
-	cd /home/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abelani/moos-ivp-abelani /home/abelani/moos-ivp-abelani/src/pXRelayTest /home/abelani/moos-ivp-abelani/build /home/abelani/moos-ivp-abelani/build/src/pXRelayTest /home/abelani/moos-ivp-abelani/build/src/pXRelayTest/CMakeFiles/pXRelayTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/abelani/moos-ivp-abelani/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/abelani/moos-ivp-abelani /Users/abelani/moos-ivp-abelani/src/pXRelayTest /Users/abelani/moos-ivp-abelani/build /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest /Users/abelani/moos-ivp-abelani/build/src/pXRelayTest/CMakeFiles/pXRelayTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/depend
 

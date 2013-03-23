@@ -1,0 +1,9 @@
+ProcessConfig = uFldNodeComms
+{
+  AppTick   = 2
+  CommsTick = 2
+
+  COMMS_RANGE      = 500
+  MIN_MSG_INTERVAL = 0
+  MAX_MSG_LENGTH   = 0
+}

@@ -2,6 +2,7 @@
 
 ServerHost = localhost
 ServerPort = 9000
+Community  = testbox
 
 ProcessConfig = ANTLER
 {

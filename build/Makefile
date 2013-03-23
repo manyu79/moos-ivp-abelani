@@ -30,24 +30,30 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /opt/local/bin/cmake -E remove -f
+
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /opt/local/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abelani/moos-ivp-abelani
+CMAKE_SOURCE_DIR = /Users/abelani/moos-ivp-abelani
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abelani/moos-ivp-abelani/build
+CMAKE_BINARY_DIR = /Users/abelani/moos-ivp-abelani/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -57,7 +63,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/local/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -66,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abelani/moos-ivp-abelani/build/CMakeFiles /home/abelani/moos-ivp-abelani/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abelani/moos-ivp-abelani/build/CMakeFiles /Users/abelani/moos-ivp-abelani/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abelani/moos-ivp-abelani/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/abelani/moos-ivp-abelani/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -186,6 +192,71 @@ pCommunicationAngle/fast:
 	$(MAKE) -f src/pCommunicationAngle/CMakeFiles/pCommunicationAngle.dir/build.make src/pCommunicationAngle/CMakeFiles/pCommunicationAngle.dir/build
 .PHONY : pCommunicationAngle/fast
 
+#=============================================================================
+# Target rules for targets named pPointAssign
+
+# Build rule for target.
+pPointAssign: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pPointAssign
+.PHONY : pPointAssign
+
+# fast build rule for target.
+pPointAssign/fast:
+	$(MAKE) -f src/pPointAssign/CMakeFiles/pPointAssign.dir/build.make src/pPointAssign/CMakeFiles/pPointAssign.dir/build
+.PHONY : pPointAssign/fast
+
+#=============================================================================
+# Target rules for targets named pGenPath
+
+# Build rule for target.
+pGenPath: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pGenPath
+.PHONY : pGenPath
+
+# fast build rule for target.
+pGenPath/fast:
+	$(MAKE) -f src/pGenPath/CMakeFiles/pGenPath.dir/build.make src/pGenPath/CMakeFiles/pGenPath.dir/build
+.PHONY : pGenPath/fast
+
+#=============================================================================
+# Target rules for targets named uFldHazardMngr
+
+# Build rule for target.
+uFldHazardMngr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uFldHazardMngr
+.PHONY : uFldHazardMngr
+
+# fast build rule for target.
+uFldHazardMngr/fast:
+	$(MAKE) -f src/uFldHazardMngr/CMakeFiles/uFldHazardMngr.dir/build.make src/uFldHazardMngr/CMakeFiles/uFldHazardMngr.dir/build
+.PHONY : uFldHazardMngr/fast
+
+#=============================================================================
+# Target rules for targets named pHazardPath
+
+# Build rule for target.
+pHazardPath: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pHazardPath
+.PHONY : pHazardPath
+
+# fast build rule for target.
+pHazardPath/fast:
+	$(MAKE) -f src/pHazardPath/CMakeFiles/pHazardPath.dir/build.make src/pHazardPath/CMakeFiles/pHazardPath.dir/build
+.PHONY : pHazardPath/fast
+
+#=============================================================================
+# Target rules for targets named parsethings
+
+# Build rule for target.
+parsethings: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 parsethings
+.PHONY : parsethings
+
+# fast build rule for target.
+parsethings/fast:
+	$(MAKE) -f src/sandbox/CMakeFiles/parsethings.dir/build.make src/sandbox/CMakeFiles/parsethings.dir/build
+.PHONY : parsethings/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -201,6 +272,11 @@ help:
 	@echo "... pFactor"
 	@echo "... pFactorTest"
 	@echo "... pCommunicationAngle"
+	@echo "... pPointAssign"
+	@echo "... pGenPath"
+	@echo "... uFldHazardMngr"
+	@echo "... pHazardPath"
+	@echo "... parsethings"
 .PHONY : help
 
 

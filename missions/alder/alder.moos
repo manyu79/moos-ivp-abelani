@@ -25,7 +25,7 @@ ProcessConfig = ANTLER
   Run = uProcessWatch   @ NewConsole = false
   Run = pHelmIvP	@ NewConsole = false
   Run = pOdometry	@ NewConsole = false
-  Run = uXMS		@ NewConsole = false
+  Run = uXMS		@ NewConsole = true
 }
 
 

@@ -2,7 +2,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/pFactorTest.dir/FactorTest.cpp.o"
   "CMakeFiles/pFactorTest.dir/FactorTest_Info.cpp.o"
   "CMakeFiles/pFactorTest.dir/main.cpp.o"
-  "../../../bin/pFactorTest.pdb"
+  "pFactorTest.pdb"
   "../../../bin/pFactorTest"
 )
 
